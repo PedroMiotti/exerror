@@ -1,5 +1,5 @@
 {
-  "name": "express-error-handler",
+  "name": "@pedromiotti/exerror",
   "version": "1.0.0",
   "description": "Custom express error handler",
   "main": "build/index.js",
