@@ -1,30 +1,28 @@
-import { ERROR_TYPES } from '../enum/ErrorsTypes';
-
 export interface IOptions {
-    type: string;
-    code: string;
+    type?: string;
+    code?: string;
     message: string;
     errors?: string;
     meta?: {};
-    statusCode: number;
+    statusCode?: number;
 }
 
 export class ApplicationError extends Error {
-    private type: string;
-    private code: string;
+    private type?: string;
+    private code?: string;
     private errors?: string;
     private meta?: {};
-    public statusCode: number;
+    public statusCode?: number;
 
-    constructor(options: IOptions, overrides?: any) {
+    constructor(options: IOptions, overrides?: {}) {
         super();
         Object.assign(options, overrides); // Overwrite if it has the same key
 
         Object.setPrototypeOf(this, ApplicationError.prototype); // Ref: https://www.dannyguo.com/blog/how-to-fix-instanceof-not-working-for-custom-errors-in-typescript/
 
-        if (!ERROR_TYPES.hasOwnProperty(options.type)) {
-            throw new Error(`ApplicationError: ${options.type} is not a valid type.`);
-        }
+        // if (!ERROR_TYPES.hasOwnProperty(options.type)) {
+        //     throw new Error(`ApplicationError: ${options.type} is not a valid type.`);
+        // }
 
         if (!options.message) {
             throw new Error("ApplicationError: error message required.");

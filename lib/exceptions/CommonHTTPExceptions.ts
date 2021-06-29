@@ -1,4 +1,4 @@
-import { ERROR_TYPES } from '../enum/ErrorsTypes';
+import { ERROR_TYPES } from '../enum';
 
 const CommonHTTPExceptions = {
     // Application custom errors
