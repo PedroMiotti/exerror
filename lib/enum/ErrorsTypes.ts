@@ -1,0 +1,7 @@
+export enum ERROR_TYPES {
+    INTERNAL = "INTERNAL",
+    CLIENT = "CLIENT",
+    NETWORK = "NETWORK",
+    SERVER = "SERVER",
+    UNKNOWN = "UNKNOWN"
+}
