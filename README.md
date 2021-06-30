@@ -2,9 +2,9 @@
 
 A lightweight library to gracefully handle errors in expressJs
 
-<img alt="License: MIT" src="https://img.shields.io/github/repo-size/PedroMiotti/exerror" />
-<img alt="Release" src="https://img.shields.io/github/v/release/PedroMiotti/exerror" />
-<img alt="Release" src="https://img.shields.io/github/license/PedroMiotti/exerror" />
+![GitHub repo size](https://img.shields.io/github/repo-size/PedroMiotti/exerror)
+![npm](https://img.shields.io/npm/dw/@pedromiotti/exerror)
+![GitHub](https://img.shields.io/github/license/PedroMiotti/exerror)
 
 ```js
 import express from 'express';
