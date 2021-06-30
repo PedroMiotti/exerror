@@ -1,4 +1,4 @@
-![Express Logo](.github/img/logo.png)
+![Exerror Logo](https://github.com/PedroMiotti/exerror/blob/main/.github/img/logo.png)
 
 A lightweight library to gracefully handle errors in expressJs
 
@@ -127,7 +127,8 @@ And the second error, if the database does not exist.
     ```ts  
     const CustomExceptions = {};
     ```
-5. Each error has to have this tamplate:
+5. Each error has to have this template:
+   
    ```ts
     ERROR_NAME: {
         type: ,
@@ -137,6 +138,7 @@ And the second error, if the database does not exist.
     }
     ```
    For example:
+   
    ```ts
     MISSING_INFORMATION: {
         type: ERROR_TYPES.CLIENT,
@@ -149,7 +151,7 @@ OBS:
 *You have to use one of our `ERROR_TYPES` for the `type` field, they are:*
 
    ```ts
-    export enum ERROR_TYPES {
+    enum ERROR_TYPES {
         INTERNAL = "INTERNAL",
         CLIENT = "CLIENT",
         NETWORK = "NETWORK",
@@ -159,6 +161,7 @@ OBS:
    ```
 
 ### Using your custom errors
+
 
 ```ts
 import { ApplicationError }  from '@pedromiotti/exerror';
