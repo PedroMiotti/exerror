@@ -187,9 +187,6 @@ export { registerUser };
 ```
 
 
-*There is and example project inside the demo folder*.
-
-
 ## Licence
 
 [MIT](LICENSE)
