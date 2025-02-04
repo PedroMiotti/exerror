@@ -115,7 +115,7 @@ And the second error, if the database does not exist.
 
 1. Create a folder called exceptions (optional, and you can call whatever you want).
    
-2. Inside create a file. Let's call it `customExceptions.ts`.
+2. Inside create a file. Let's call it `customExceptions.ts`, you can call it whatever you want.
 
 3. Start by importing our `ERROR_TYPES`:
    
